@@ -1,0 +1,50 @@
+baseURL: https://garageandgadgets.com/
+languageCode: en-us
+title: Garage & Gadgets
+theme: tailroad
+
+# Refer to this link https://gohugo.io/functions/css/tailwindcss/  
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+  - source: assets/notwatching/hugo_stats\.json
+    target: css
+  - source: (postcss|tailwind)\.config\.js
+    target: css
+module:
+  mounts:
+  - source: assets
+    target: assets
+  - disableWatch: true
+    source: hugo_stats.json
+    target: assets/notwatching/hugo_stats.json
+
+outputs:
+  home: ['html', 'rss', 'json']
+
+params:
+  logo:
+     #image: /images/logo.svg #LOGO takes precedence over title
+     title: Garage & Gadgets
+  mainSections: ['posts']
+  sidebar:
+      enable: true # Default is false
+      widgets: ['recent','social']
+      recentsCount: 6 # Default is 5
+      showCounts: true # Default is false
+      social:
+            #youtube: "https://youtube.com/@garageandgadgets?si=ge8Q6Z95gDL4jiNM"
+            #linkedin: example-2b0a8b140
+            #facebook: example  
+            custom:
+                youtube:
+                  name: Garage & Gadgets 
+                  #icon: images/logo.svg
+                  url: https://youtube.com/@garageandgadgets?si=ge8Q6Z95gDL4jiNM
+
+      
+
+
+
+

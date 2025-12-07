@@ -1,0 +1,50 @@
+<svg
+    width="800"
+    height="40"
+    viewBox="0 0 800 40"
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background (transparent so the site handles dark/light mode) -->
+  <rect width="800" height="40" fill="none"/>
+
+  <!-- Gear-style G Monogram -->
+  <g transform="translate(5, 5)">
+    <!-- Outer gear ring -->
+    <circle cx="15" cy="15" r="13" stroke="#ff8a00" stroke-width="3" fill="none"/>
+
+    <!-- Gear teeth -->
+    <g stroke="#ff8a00" stroke-width="3">
+      <line x1="15" y1="0" x2="15" y2="5"/>
+      <line x1="15" y1="25" x2="15" y2="30"/>
+      <line x1="0"  y1="15" x2="5"  y2="15"/>
+      <line x1="25" y1="15" x2="30" y2="15"/>
+      <line x1="5"  y1="5"  x2="8"  y2="8"/>
+      <line x1="25" y1="5"  x2="22" y2="8"/>
+      <line x1="5"  y1="25" x2="8"  y2="22"/>
+      <line x1="25" y1="25" x2="22" y2="22"/>
+    </g>
+
+    <!-- The letter G -->
+    <path
+      d="M 15 6
+         A 9 9 0 1 1 6 15
+         H 14"
+      fill="none"
+      stroke="#e6e6e6"
+      stroke-width="3"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Text: Garage & Gadgets -->
+  <text
+    x="50"
+    y="26"
+    font-family="Inter, Arial, sans-serif"
+    font-size="20"
+    fill="#e6e6e6"
+    letter-spacing="0.5"
+  >
+    Garage &amp; Gadgets
+  </text>
+</svg>
